@@ -1,0 +1,7 @@
+package com.victor.DropPOO.Base;
+
+public abstract class Enemy extends Character {
+	
+	
+
+}

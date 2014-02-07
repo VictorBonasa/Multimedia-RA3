@@ -1,0 +1,33 @@
+package com.victor.DropPOO.Base;
+
+public abstract class Character {
+	
+	/*float x;
+	float y;
+	*/
+	Vector2 position;
+	float speed;
+	Texture texture;
+	Rectangle rectangle;
+	
+	public void Character(){
+		
+	}
+	
+	public void render (SpriteBatch batch) {
+		
+	}
+	
+	public void update(float dt) {
+		
+	}
+	
+	public void render() {
+		
+	}
+	
+	
+	
+	
+
+}

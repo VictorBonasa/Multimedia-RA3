@@ -1,0 +1,7 @@
+package com.victor.DropPOO.Base;
+
+public class Droplet extends Item{
+	
+	
+
+}

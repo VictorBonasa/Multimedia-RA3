@@ -1,0 +1,42 @@
+package com.victor.DropPOO.Base;
+
+import com.badlogic.gdx.graphics.Texture;
+import com.badlogic.gdx.graphics.g2d.SpriteBatch;
+import com.badlogic.gdx.math.Rectangle;
+import com.badlogic.gdx.math.Vector2;
+
+public abstract class Character {
+	
+	/*float x;
+	float y;
+	*/
+	Vector2 position;
+	float speed;
+	Texture texture;
+	Rectangle rectangle;
+	
+	public void Character(Vector2 position, float speed, Texture texture){
+		
+		this.position = position; 
+		this.speed = speed;
+		this.texture = texture;
+		rectangle = new Rectangle (position.x, position.y, texture.getWidth(), texture.getHeight());
+		
+	}
+	
+	public void move(Vector2 movement){
+		movement.scl(speed);
+		position.add(movement);
+		rectangle.x = position.x;
+		rectangle.y = position.y;
+	}
+	
+	public void render (SpriteBatch batch) {
+		
+		batch.draw(texture, position.x, position.y);
+		
+	}
+	
+	public abstract void update(float dt);
+
+}

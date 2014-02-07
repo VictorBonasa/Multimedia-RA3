@@ -1,0 +1,26 @@
+package com.victor.DropPOO.Base;
+
+public abstract class Character {
+	
+	private position posicion;
+	private
+	private speed
+	private texture
+	
+	public void Character(){
+		
+	}
+	
+	public void update(){
+		
+	}
+	
+	public void render(){
+		
+	}
+	
+	
+	
+	
+
+}
